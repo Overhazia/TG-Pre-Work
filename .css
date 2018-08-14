@@ -1,226 +1,94 @@
-body {
-    background-color: #ffffff;
-    color: #db6363;
+header, footer {
+    background-color: #ffa500;
     text-align: center;
+    min-width: 500px;
   }
   
-  .grid {
-  display: grid;
-    grid-template: 5% 30% 10% 30% 20% 5% / repeat(6, 1fr);
-    grid-column-gap: 20px;
+  main {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: repeat(3, 450px);
+    grid-gap: 20px;
+    margin-top: 44px;
+    grid-auto-rows: 500px;
+    justify-items: center;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    grid-auto-flow: column;
   }
   
-  header {
-    background-color: #ffffff;
-    color: #dc6363;
-    padding-top: 10px;
-    grid-column-start: 1;
-    grid-column-end: 7;
-  
-  }
-  
-  .banner {
-    background-color: #db6363;
-    color: #ffffff;
+  h2 {
     font-family: Poppins;
-    font-size: 84px;
-    font-weight: 300;
-    letter-spacing: 3.7px;
-    color: #ffffff;
-    grid-column-start: 1;
-    grid-column-end: 7;
-  
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #ffa500;
+    padding: 10px 0px 10px 10px;
   }
   
   img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
   
-  .about {
-    background-color: #f0f0f0;
-    padding-bottom: 20px;
-  grid-column-start: 1;
-    grid-column-end: 7;
+  .recipe {
+    width: 200px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
   }
   
-  .text {
-    width: 50%;
-    height: 100%;
-    margin: auto;
-    padding: auto;
-    color: #2f2d2d;
+  .a {
+  }
+  
+  .c {
+  }
+  
+  .time {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 20px;
+    height: auto;
+  }
+  
+  .mins {
+    display: inline-block;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
+    letter-spacing: 0.3px;
     text-align: left;
-    letter-spacing: 0.5px;
-    padding-top: 30px;
+    color: #4a4a4a;
+    position: relative;
+    bottom: 5px;
   }
   
-  .box {
-    background-color: #2f2f2f;
-    color: #ffffff;
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .address {
-  grid-column: 1 / 3;
-  }
-  
-  .hours {
-  grid-column: 3 / 5;
-  }
-  
-  .call-us {
-  grid-column: 5 / 7;
-  }
-  
-  .marker {
-    width: 51px;
-    height: 82px;
-  }
-  
-  .clock {
-    width: 75px;
-    height: 75px;
-  }
-  
-  .phone {
-    width: 98px;
-    height: 79px;
-  }
-  
-  .testimonial {
-    margin: auto;
-    padding: auto;
-    background-color: #f0f0f0;
-    color: #db6363;
-    font-family: Poppins;
-    font-size: 20px;
+  .description {
+    font-family: Work Sans;
+    font-size: 14px;
     font-weight: 300;
-    letter-spacing: 3.7px;
-    font-style: italic;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #4a4a4a;
+    padding: 10px 0px 10px 10px;
+    border-top: 1px solid #4a4a4a;
   }
   
-  .one {
-  grid-column: 1 / 4;
+  .logo {
+    width: 115px;
+    height: 21.1px;
+    object-fit: contain;
+    padding: 20px;
   }
   
-  .two {
-  grid-column: 4 / 7;
+  .container {
+    min-width: 500px;
+    margin: auto;
   }
   
   footer {
-    background-color: #db6363;
-    color: #ffffff;
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 0.4px;
-    grid-column-start: 1;
-    grid-column-end: 7;
-  }
-  
-  
-  @media(max-width: 600px){
-  
-    .grid {
-      grid-template: 5% 30% 10% repeat(3, 10%) 20% 5% / 100%;
-      grid-row-gap: 20px;
-    }
-  
-    header {
-  margin-bottom: -20px;
-    }
-  
-    .banner {
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 2.75;
-      letter-spacing: 1.9px;
-  margin-bottom: -20px;
-    }
-  
-    .dog {
-      width: 195px;
-      height: 237px;
-      padding-left: 50px;
-    }
-  
-    .about {
-  margin-bottom: -20px;
-    }
-  
-    .text {
-      width: 75%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      font-size: 14px;
-      font-weight: 500;
-    }
-  
-    .box {
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.3px;
-    }
-  
-    .address {
-      grid-row: 4 / span 1;
-      grid-column: 1 / span 1;
-    }
-  
-    .hours {
-      grid-row: 5 / span 1;
-      grid-column: 1 / span 1;
-    }
-  
-    .call-us {
-      grid-row: 6 / span 1;
-      grid-column: 1 / span 1;
-    }
-  
-    .marker {
-      width: 25.5px;
-      height: 40.4px;
-    }
-  
-    .clock {
-      width: 37.6px;
-      height: 37.5px;
-    }
-  
-    .phone {
-      width: 49px;
-      height: 39.5px;
-    }
-  
-    .testimonial {
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.3px;
-    }
-  
-    .one {
-      grid-row: 7 / span 1;
-      grid-column: 1 / span 1;
-    }
-  
-    .two {
-      grid-row: 8 / span 1;
-      grid-column: 1 / span 1;
-    }
-  
-    footer {
-  margin-top: -20px;
-    }
-  
+    margin-top: 44px;
   }
   
   
