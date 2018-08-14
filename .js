@@ -1,12 +1,14 @@
-//value saved to kelvin will stay constant
-const kelvin = 293;
-//converts kelvin to celcius
-const celsius = kelvin - 273;
-//variable fahrenheit
-let fahrenheit = celsius * (9/5) + 32;
-//rounds down fahrenheit temp to nearest whole
-fahrenheit = Math.floor(fahrenheit);
-console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
-let newton = celsius * (33/100);
-newton = Math.floor(newton);
-console.log(`The temperature is ${newton} degrees newton`);
+// my current age
+const myAge = 22;
+// first 
+let earlyYears = 2;
+earlyYears *= 10.5;
+let laterYears = myAge - 2;
+// my later years in dog years
+laterYears *= 4;
+console.log(laterYears);
+console.log(earlyYears);
+let myAgeInDogYears = earlyYears + laterYears;
+console.log(myAgeInDogYears);
+let myName = 'Allen Buckley'.toLowerCase();
+console.log(`My name is ${myName}. I am ${myAgeInDogYears} years old in dog years.`);
