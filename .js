@@ -1,34 +1,16 @@
-let userName = 'Allen';
-userName ? console.log('Hello Allen!')
-: console.log('Hello!');
-let userQuestion = 'Will I be a coder?';
-console.log(`The ${userName} asked: ${userQuestion}`);
-const randomNumber = Math.floor(Math.random() * 8);
-let eightBall = '';
-switch(randomNumber){
-  case 0:
-    eightBall = 'It is certain';
-    break;
-  case 1:
-    eightBall = 'It is decidedly so';
-    break;
-  case 2:
-    eightBall = 'Reply hazy try again';
-    break;
-  case 3:
-    eightBall = 'Cannot predict now';
-    break;
-  case 4:
-    eightBall = 'Do not count on it';
-    break;
-  case 5:
-    eightBall = 'My sources say no';
-    break;
-  case 6:
-    eightBall = 'Outlook not so good';
-    break;
-  case 7:
-    eightBall = 'Signs point to yes';
-    break;
+let number = Math.floor(Math.random() * 1000);
+let early = true;
+const age = 18;
+if(early && age > 18){
+  number += 1000;
 }
-console.log(eightBall);
+
+if(early && age > 18){
+  console.log( `Your race will begin at 9:30 and your race number is: ${number}.`);
+} else if (!early && age > 18){
+  console.log(`Your race will start at 11:00 and your race number is: ${number}.`);
+} else if (age < 18){
+  console.log(`Your race will start at 12:30 and your race number is: ${number}.`);
+} else {
+  console.log('Please see registration desk.');
+}
