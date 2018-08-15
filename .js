@@ -1,10 +1,13 @@
-let cookies = ['chocolate chip', 'raisin', 'macadamia nut', 'sugar'];
+let myPlaces = ['New York', 'Maine', 'Your moms'];
 
-for (let i = 0; i<cookies.length; i++) {
-  console.log('I would love to eat a ' + cookies[i] + ' cookie right now!');
-}
-let vacationSpots = ['Cancun', 'Ireland', 'Spain'];
+let friendPlaces = ['Miami', 'Maine', 'My moms'];
 
-for (let vacationSpotIndex = vacationSpots.length - 1; vacationSpotIndex >= 0; vacationSpotIndex--) {
-  console.log('I would love to visit ' + vacationSpots[vacationSpotIndex]);
+for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++) {
+  
+  for (let friendPlacesIndex = 0; friendPlacesIndex < friendPlaces.length; friendPlacesIndex++){
+  
+      if (myPlaces[myPlacesIndex] === friendPlaces[friendPlacesIndex]) {
+        console.log('Match: ' + myPlaces[myPlacesIndex]);
+      }
+  }
 }
