@@ -1,9 +1,5 @@
-const starCount = () => {
-    let i = 5;
-    console.log(i);
-    for (let i = 0; i < 12; i++) {
-      console.log(i);
-    }
-  };
-  starCount();
-  console.log(i);
+let bucketList = ['Rappel into a cave', 'Take a falconry class', 'Learn to juggle'];
+
+console.log(bucketList);
+let newYearsResolutions = ['Fix credit', 'Go camping more', 'Nail this apprenticeship'];
+console.log(newYearsResolutions);
