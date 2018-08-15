@@ -1,13 +1,10 @@
-let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+let cookies = ['chocolate chip', 'raisin', 'macadamia nut', 'sugar'];
 
-const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+for (let i = 0; i<cookies.length; i++) {
+  console.log('I would love to eat a ' + cookies[i] + ' cookie right now!');
+}
+let vacationSpots = ['Cancun', 'Ireland', 'Spain'];
 
-condiments.push('Salsa');
-
-condiments = ['Mustard'];
-
-console.log(condiments);
-
-utensils.pop();
-
-utensils = ['Fork'];
+for (let vacationSpotIndex = 0; vacationSpotIndex < vacationSpots.length; vacationSpotIndex++) {
+  console.log('I would love to visit ' + vacationSpots[vacationSpotIndex]);
+}
