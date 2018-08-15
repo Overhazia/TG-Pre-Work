@@ -1,14 +1,18 @@
-let animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+let words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
 
-// Create the secretMessage array below
-let secretMessage = animals.map(animals => animals [0]);
+// Something is missing in the method call below
 
+console.log(words.some(function(word) {
+  return word.length < 6;
+}));
 
-console.log(secretMessage.join(''));
-
-let bigNumbers = [100, 200, 300, 400, 500];
-
-// Create the smallNumbers array below
-let smallNumbers = bigNumbers.map(function(bigNumber){
-  return bigNumber / 100;
+// Use filter to create a new array
+let interestingWords = words.filter(function(word) {
+   return word.length > 5;
 });
+
+// Make sure to uncomment the code below and fix the incorrect code before running it
+
+ console.log(interestingWords.every(function(word) {
+  return word.length > 5;
+}));
