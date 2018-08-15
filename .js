@@ -1,10 +1,14 @@
-let cards = ['Diamond', 'Spade', 'Heart', 'Club'];
+let animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
 
-let currentCard = 'Heart';
+// Create the secretMessage array below
+let secretMessage = animals.map(animals => animals [0]);
 
-while (currentCard !== 'Spade') {
-  console.log(currentCard);
-  currentCard = cards[Math.floor(Math.random() *4)];
-}
 
-console.log('You found a spade!');
+console.log(secretMessage.join(''));
+
+let bigNumbers = [100, 200, 300, 400, 500];
+
+// Create the smallNumbers array below
+let smallNumbers = bigNumbers.map(function(bigNumber){
+  return bigNumber / 100;
+});
