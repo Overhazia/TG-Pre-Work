@@ -5,6 +5,6 @@ for (let i = 0; i<cookies.length; i++) {
 }
 let vacationSpots = ['Cancun', 'Ireland', 'Spain'];
 
-for (let vacationSpotIndex = 0; vacationSpotIndex < vacationSpots.length; vacationSpotIndex++) {
+for (let vacationSpotIndex = vacationSpots.length - 1; vacationSpotIndex >= 0; vacationSpotIndex--) {
   console.log('I would love to visit ' + vacationSpots[vacationSpotIndex]);
 }
