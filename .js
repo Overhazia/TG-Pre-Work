@@ -23,3 +23,5 @@ class Nurse extends HospitalEmployee {
   }
 }
 const nurseOlynyk = new Nurse('name'['Trauma', 'Pediatrics']);
+nurseOlynyk.takeVacationDays(5);
+console.log(nurseOlynyk.remainingVacationDays);
