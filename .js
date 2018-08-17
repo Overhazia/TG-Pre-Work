@@ -4,6 +4,7 @@ const queryParams = 'rel_rhy=';
 
 // Selecting page elements
 const inputField = document.querySelector('#input');
+const topicField = document.querySelector('#topic');
 const submit = document.querySelector('#submit');
 const responseField = document.querySelector('#responseField');
 
