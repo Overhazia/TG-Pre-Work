@@ -1,5 +1,5 @@
 // Information to reach API
-const apiKey = '<ab1657a32e4c40cc9663652bb2cea186>';
+const apiKey = '<Your API Key>';
 const url = 'https://api.rebrandly.com/v1/links';
 
 // Some page elements
@@ -19,6 +19,13 @@ const shortenUrl = () => {
       'apikey': apiKey
     },
     body: data
+  }).then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Request failed!');
+  }, networkError => {
+    console.log(networkError.message)
   })
 }
 
