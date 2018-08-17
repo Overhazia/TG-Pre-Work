@@ -1,27 +1,11 @@
-import { availableAirplanes, flightRequirements, meetsStaffRequirements} from './airplane';
-
-import meetsSpeedRangeRequirements from './airplane';
-
-function displayFuelCapacity() {
-  availableAirplanes.forEach(function(element) {
-    console.log('Fuel Capacity of ' + element.name + ': ' + element['fuelCapacity']);
-  });
+const xhr = new XMLHttpRequest();
+const url = 'https://api-to-call.com/endpoint';
+xhr.responseType = 'json';
+xhr.onreadystatechange = () => {
+  if (xhr.readyState === XMLHttpRequest.DONE){
+    return xhr.response;
+  }
 }
 
-displayFuelCapacity();
-
-function displayStaffStatus() {
-  availableAirplanes.forEach(function(element) {
-   console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff) );
-  });
-}
-
-displayStaffStatus();
-
-function displaySpeedRangeStatus() {
-  availableAirplanes.forEach(function(element) {
-   console.log(element.name + ' meets speed range requirements:' + meetsSpeedRangeRequirements(element.maxSpeed, element.minSpeed, flightRequirements.requiredSpeedRange));
-  });
-}
-
-displaySpeedRangeStatus();
+xhr.open('GET', url);
+xhr.send();
