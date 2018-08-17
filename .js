@@ -2,6 +2,11 @@ class HospitalEmployee {
   constructor(name) {
     this._name = name;
     this._remainingVacationDays = 20;
+    
+  }
+  static generatePassword(){
+    const Password = Math.floor(Math.random()*10000);
+    return Password;
   }
   
   get name() {
